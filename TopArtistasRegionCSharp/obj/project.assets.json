@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Bases de datos avanzadas\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionCSharp.csproj",
+      "projectUniqueName": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionCSharp.csproj",
       "projectName": "TopArtistasRegionCSharp",
-      "projectPath": "F:\\Bases de datos avanzadas\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionCSharp.csproj",
+      "projectPath": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionCSharp.csproj",
       "packagesPath": "C:\\Users\\estor\\.nuget\\packages\\",
-      "outputPath": "F:\\Bases de datos avanzadas\\TopartistasRegion\\TopArtistasRegionCSharp\\obj\\",
+      "outputPath": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\estor\\AppData\\Roaming\\NuGet\\NuGet.Config",

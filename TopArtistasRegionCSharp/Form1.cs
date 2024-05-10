@@ -22,7 +22,7 @@ namespace TopArtistasRegionCSharp
             ComboBoxPaises.ValueMember = "id";
             auto = false;
             DataGridView1.ReadOnly = true;
-            query = "select ARTISTA.Id AS [Top Artist],ARTISTA.Nombre,PAIS.Nombre AS Pais from ARTISTA  join PAIS on pais.Id = ARTISTA.IdPais";
+            query = "select * from VW_Top_Artistas";
             DataGridView1.DataSource = Connection.SelectQuery(query);
         }
 
@@ -32,7 +32,7 @@ namespace TopArtistasRegionCSharp
             {
                 return;
             }
-            query = "select ARTISTA.Id AS [Top Artist],ARTISTA.Nombre,PAIS.Nombre AS Pais from ARTISTA join PAIS on pais.Id = ARTISTA.IdPais where PAIS.Nombre = '" + ComboBoxPaises.Text + "'";
+            query = "select * from VW_Top_Artistas where Pais= '" + ComboBoxPaises.Text + "'";
             DataGridView1.DataSource = Connection.SelectQuery(query);
 
 
@@ -43,7 +43,7 @@ namespace TopArtistasRegionCSharp
             string buscarTexto = TextBoxBuscar.Text.Trim();
             string query = "";
 
-            query = "select ARTISTA.Id AS [Top Artist],ARTISTA.Nombre,PAIS.Nombre AS Pais from ARTISTA join PAIS on pais.Id = ARTISTA.IdPais where ARTISTA.Nombre LIKE '%" + buscarTexto + "%'" ;
+            query = "select * from VW_Top_Artistas where Nombre LIKE   '%" + buscarTexto + "%'" ;
         DataTable dt = Connection.SelectQuery(query);
 
             DataGridView1.DataSource = dt;
