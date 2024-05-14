@@ -48,3 +48,5 @@ C:\Users\estor\OneDrive\Escritorio\TopartistasRegion\TopArtistasRegionSpotify\ob
 C:\Users\estor\OneDrive\Escritorio\TopartistasRegion\TopArtistasRegionSpotify\obj\Debug\net7.0-windows\TopArtistasRegionSpotify.pdb
 C:\Users\estor\OneDrive\Escritorio\TopartistasRegion\TopArtistasRegionSpotify\obj\Debug\net7.0-windows\TopArtistasRegionSpotify.genruntimeconfig.cache
 C:\Users\estor\OneDrive\Escritorio\TopartistasRegion\TopArtistasRegionSpotify\obj\Debug\net7.0-windows\ref\TopArtistasRegionSpotify.dll
+C:\Users\estor\OneDrive\Escritorio\TopartistasRegion\TopArtistasRegionSpotify\obj\Debug\net7.0-windows\TopArtistasRegionSpotify.Login.resources
+C:\Users\estor\OneDrive\Escritorio\TopartistasRegion\TopArtistasRegionSpotify\obj\Debug\net7.0-windows\TopArtistasRegionSpotify.ShowArtist.resources

@@ -181,7 +181,7 @@ Partial Class Form1
         Me.Controls.Add(Me.ComboBoxPaises)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

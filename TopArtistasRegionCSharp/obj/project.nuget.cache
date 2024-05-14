@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xYToRu/t4Xe8+Fl7wNB74oeAIC2OmLyG4nVcENCI98xkeemdalt437Ev1NJaoUnLwjHP0DPsLgB+tW/uhiovLA==",
+  "dgSpecHash": "iHTRf1v0wY3yyy89T9djC4Clw4O9toYm888GhYkLR9JcCYA8FIthnrxECuctjDSYwPKpPQHdB2/2x8RVxVUpOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionCSharp.csproj",
+  "projectFilePath": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionSpotify.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\estor\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\estor\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -1,213 +1,221 @@
-﻿namespace TopArtistasRegionCSharp
-{
-    partial class Form1
-    {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+﻿using System;
+using System.Diagnostics;
+using System.Drawing;
+using System.Windows.Forms;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+namespace TopArtistasRegionSpotify
+{
+    [Microsoft.VisualBasic.CompilerServices.DesignerGenerated()]
+    public partial class Form1 : Form
+    {
+
+        // Form overrides dispose to clean up the component list.
+        [DebuggerNonUserCode()]
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            try
             {
-                components.Dispose();
+                if (disposing && components is not null)
+                {
+                    components.Dispose();
+                }
             }
-            base.Dispose(disposing);
+            finally
+            {
+                base.Dispose(disposing);
+            }
         }
 
-        #region Windows Form Designer generated code
+        // Required by the Windows Form Designer
+        private System.ComponentModel.IContainer components;
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
+        // NOTE: The following procedure is required by the Windows Form Designer
+        // It can be modified using the Windows Form Designer.  
+        // Do not modify it using the code editor.
+        [DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.Label3 = new System.Windows.Forms.Label();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.ButtonBuscar = new System.Windows.Forms.Button();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.TextBoxBuscar = new System.Windows.Forms.TextBox();
-            this.ComboBoxPaises = new System.Windows.Forms.ComboBox();
-            this.DataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // Label3
-            // 
-            this.Label3.AutoSize = true;
-            this.Label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label3.ForeColor = System.Drawing.Color.White;
-            this.Label3.Location = new System.Drawing.Point(163, 130);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(88, 20);
-            this.Label3.TabIndex = 15;
-            this.Label3.Text = "Artist Name";
-            // 
-            // Label2
-            // 
-            this.Label2.AutoSize = true;
-            this.Label2.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(257, 54);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(233, 50);
-            this.Label2.TabIndex = 14;
-            this.Label2.Text = "(2000-2023)";
-            // 
-            // ButtonBuscar
-            // 
-            this.ButtonBuscar.Location = new System.Drawing.Point(541, 124);
-            this.ButtonBuscar.Name = "ButtonBuscar";
-            this.ButtonBuscar.Size = new System.Drawing.Size(81, 32);
-            this.ButtonBuscar.TabIndex = 13;
-            this.ButtonBuscar.Text = "Buscar";
-            this.ButtonBuscar.UseVisualStyleBackColor = true;
-            this.ButtonBuscar.Click += new System.EventHandler(this.ButtonBuscar_Click);
-            // 
-            // PictureBox1
-            // 
-            this.PictureBox1.Image = global::TopArtistasRegionCSharp.Properties.Resources.Spotify_logo_without_text_svg;
-            this.PictureBox1.Location = new System.Drawing.Point(12, 4);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(161, 152);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox1.TabIndex = 12;
-            this.PictureBox1.TabStop = false;
-            // 
-            // TextBoxBuscar
-            // 
-            this.TextBoxBuscar.Location = new System.Drawing.Point(257, 130);
-            this.TextBoxBuscar.Name = "TextBoxBuscar";
-            this.TextBoxBuscar.Size = new System.Drawing.Size(143, 23);
-            this.TextBoxBuscar.TabIndex = 11;
-            // 
-            // ComboBoxPaises
-            // 
-            this.ComboBoxPaises.FormattingEnabled = true;
-            this.ComboBoxPaises.Location = new System.Drawing.Point(406, 130);
-            this.ComboBoxPaises.Name = "ComboBoxPaises";
-            this.ComboBoxPaises.Size = new System.Drawing.Size(129, 23);
-            this.ComboBoxPaises.TabIndex = 10;
-            this.ComboBoxPaises.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPaises_SelectedIndexChanged);
-            // 
-            // DataGridView1
-            // 
-            this.DataGridView1.AllowUserToAddRows = false;
-            this.DataGridView1.AllowUserToDeleteRows = false;
-            this.DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
-            this.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
-            this.DataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle13;
-            this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(35)))), ((int)(((byte)(40)))));
-            this.DataGridView1.Location = new System.Drawing.Point(12, 162);
-            this.DataGridView1.Name = "DataGridView1";
-            this.DataGridView1.ReadOnly = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle15;
-            this.DataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.DataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.DataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGridView1.RowTemplate.Height = 25;
-            this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.ShowCellErrors = false;
-            this.DataGridView1.ShowCellToolTips = false;
-            this.DataGridView1.ShowEditingIcon = false;
-            this.DataGridView1.ShowRowErrors = false;
-            this.DataGridView1.Size = new System.Drawing.Size(616, 514);
-            this.DataGridView1.TabIndex = 9;
+            var DataGridViewCellStyle1 = new DataGridViewCellStyle();
+            var DataGridViewCellStyle2 = new DataGridViewCellStyle();
+            var DataGridViewCellStyle3 = new DataGridViewCellStyle();
+            var DataGridViewCellStyle4 = new DataGridViewCellStyle();
+            var DataGridViewCellStyle5 = new DataGridViewCellStyle();
+            Label1 = new Label();
+            DataGridView1 = new DataGridView();
+            DataGridView1.CellDoubleClick += new DataGridViewCellEventHandler(DataGridView1_CellDoubleClick);
+            ComboBoxPaises = new ComboBox();
+            ComboBoxPaises.SelectedIndexChanged += new EventHandler(ComboBoxPaises_SelectedIndexChanged);
+            TextBoxBuscar = new TextBox();
+            PictureBox1 = new PictureBox();
+            ButtonBuscar = new Button();
+            ButtonBuscar.Click += new EventHandler(ButtonBuscar_Click);
+            Label2 = new Label();
+            Label3 = new Label();
+            ((System.ComponentModel.ISupportInitialize)DataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // Label1
             // 
-            this.Label1.AutoSize = true;
-            this.Label1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(201, 4);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(344, 50);
-            this.Label1.TabIndex = 8;
-            this.Label1.Text = "Top Artist Country";
+            Label1.AutoSize = true;
+            Label1.Font = new Font("Segoe UI", 27.75f, FontStyle.Bold, GraphicsUnit.Point);
+            Label1.ForeColor = Color.White;
+            Label1.Location = new Point(201, -3);
+            Label1.Name = "Label1";
+            Label1.Size = new Size(344, 50);
+            Label1.TabIndex = 0;
+            Label1.Text = "Top Artist Country";
+            // 
+            // DataGridView1
+            // 
+            DataGridView1.AllowUserToAddRows = false;
+            DataGridView1.AllowUserToDeleteRows = false;
+            DataGridView1.AllowUserToResizeRows = false;
+            DataGridViewCellStyle1.BackColor = Color.FromArgb(40, 40, 40);
+            DataGridViewCellStyle1.ForeColor = Color.White;
+            DataGridViewCellStyle1.SelectionBackColor = Color.MediumSeaGreen;
+            DataGridViewCellStyle1.SelectionForeColor = Color.White;
+            DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1;
+            DataGridView1.BackgroundColor = Color.FromArgb(36, 35, 40);
+            DataGridView1.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
+            DataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            DataGridViewCellStyle2.BackColor = Color.FromArgb(17, 17, 17);
+            DataGridViewCellStyle2.Font = new Font("Segoe UI", 18.0f, FontStyle.Bold, GraphicsUnit.Point);
+            DataGridViewCellStyle2.ForeColor = Color.White;
+            DataGridViewCellStyle2.SelectionBackColor = Color.MediumSeaGreen;
+            DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2;
+            DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            DataGridViewCellStyle3.BackColor = Color.FromArgb(40, 40, 40);
+            DataGridViewCellStyle3.Font = new Font("Segoe UI", 18.0f, FontStyle.Regular, GraphicsUnit.Point);
+            DataGridViewCellStyle3.ForeColor = Color.White;
+            DataGridViewCellStyle3.SelectionBackColor = Color.MediumSeaGreen;
+            DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            DataGridView1.DefaultCellStyle = DataGridViewCellStyle3;
+            DataGridView1.GridColor = Color.FromArgb(36, 35, 40);
+            DataGridView1.Location = new Point(12, 155);
+            DataGridView1.Name = "DataGridView1";
+            DataGridView1.ReadOnly = true;
+            DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            DataGridViewCellStyle4.BackColor = Color.FromArgb(17, 17, 17);
+            DataGridViewCellStyle4.Font = new Font("Segoe UI", 9.0f, FontStyle.Regular, GraphicsUnit.Point);
+            DataGridViewCellStyle4.ForeColor = Color.White;
+            DataGridViewCellStyle4.SelectionBackColor = Color.MediumSeaGreen;
+            DataGridViewCellStyle4.SelectionForeColor = Color.White;
+            DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4;
+            DataGridViewCellStyle5.BackColor = Color.FromArgb(17, 17, 17);
+            DataGridViewCellStyle5.ForeColor = Color.White;
+            DataGridViewCellStyle5.SelectionBackColor = Color.MediumSeaGreen;
+            DataGridViewCellStyle5.SelectionForeColor = Color.White;
+            DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle5;
+            DataGridView1.RowTemplate.DefaultCellStyle.BackColor = Color.FromArgb(17, 17, 17);
+            DataGridView1.RowTemplate.DefaultCellStyle.ForeColor = Color.White;
+            DataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(17, 17, 17);
+            DataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.White;
+            DataGridView1.RowTemplate.Height = 25;
+            DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DataGridView1.ShowCellErrors = false;
+            DataGridView1.ShowCellToolTips = false;
+            DataGridView1.ShowEditingIcon = false;
+            DataGridView1.ShowRowErrors = false;
+            DataGridView1.Size = new Size(616, 514);
+            DataGridView1.TabIndex = 1;
+            // 
+            // ComboBoxPaises
+            // 
+            ComboBoxPaises.FormattingEnabled = true;
+            ComboBoxPaises.Location = new Point(406, 123);
+            ComboBoxPaises.Name = "ComboBoxPaises";
+            ComboBoxPaises.Size = new Size(129, 23);
+            ComboBoxPaises.TabIndex = 2;
+            // 
+            // TextBoxBuscar
+            // 
+            TextBoxBuscar.Location = new Point(257, 123);
+            TextBoxBuscar.Name = "TextBoxBuscar";
+            TextBoxBuscar.Size = new Size(143, 23);
+            TextBoxBuscar.TabIndex = 3;
+            // 
+            // PictureBox1
+            // 
+            PictureBox1.Image = My.Resources.Resources.Spotify_logo_without_text_svg;
+            PictureBox1.Location = new Point(12, -3);
+            PictureBox1.Name = "PictureBox1";
+            PictureBox1.Size = new Size(161, 152);
+            PictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            PictureBox1.TabIndex = 4;
+            PictureBox1.TabStop = false;
+            // 
+            // ButtonBuscar
+            // 
+            ButtonBuscar.Location = new Point(541, 117);
+            ButtonBuscar.Name = "ButtonBuscar";
+            ButtonBuscar.Size = new Size(81, 32);
+            ButtonBuscar.TabIndex = 5;
+            ButtonBuscar.Text = "Buscar";
+            ButtonBuscar.UseVisualStyleBackColor = true;
+            // 
+            // Label2
+            // 
+            Label2.AutoSize = true;
+            Label2.Font = new Font("Segoe UI", 27.75f, FontStyle.Bold, GraphicsUnit.Point);
+            Label2.ForeColor = Color.White;
+            Label2.Location = new Point(257, 47);
+            Label2.Name = "Label2";
+            Label2.Size = new Size(233, 50);
+            Label2.TabIndex = 6;
+            Label2.Text = "(2000-2023)";
+            // 
+            // Label3
+            // 
+            Label3.AutoSize = true;
+            Label3.Font = new Font("Segoe UI", 11.25f, FontStyle.Regular, GraphicsUnit.Point);
+            Label3.ForeColor = Color.White;
+            Label3.Location = new Point(163, 123);
+            Label3.Name = "Label3";
+            Label3.Size = new Size(88, 20);
+            Label3.TabIndex = 7;
+            Label3.Text = "Artist Name";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(640, 681);
-            this.Controls.Add(this.Label3);
-            this.Controls.Add(this.Label2);
-            this.Controls.Add(this.ButtonBuscar);
-            this.Controls.Add(this.PictureBox1);
-            this.Controls.Add(this.TextBoxBuscar);
-            this.Controls.Add(this.ComboBoxPaises);
-            this.Controls.Add(this.DataGridView1);
-            this.Controls.Add(this.Label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = ButtonBuscar;
+            AutoScaleDimensions = new SizeF(7.0f, 15.0f);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(17, 17, 17);
+            ClientSize = new Size(640, 681);
+            Controls.Add(Label3);
+            Controls.Add(Label2);
+            Controls.Add(ButtonBuscar);
+            Controls.Add(PictureBox1);
+            Controls.Add(TextBoxBuscar);
+            Controls.Add(ComboBoxPaises);
+            Controls.Add(DataGridView1);
+            Controls.Add(Label1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)DataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PictureBox1).EndInit();
+            FormClosing += new FormClosingEventHandler(Form1_FormClosing);
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
-        #endregion
-
-        internal Label Label3;
-        internal Label Label2;
-        internal Button ButtonBuscar;
-        internal PictureBox PictureBox1;
-        internal TextBox TextBoxBuscar;
-        internal ComboBox ComboBoxPaises;
-        internal DataGridView DataGridView1;
         internal Label Label1;
+        internal DataGridView DataGridView1;
+        internal ComboBox ComboBoxPaises;
+        internal TextBox TextBoxBuscar;
+        internal PictureBox PictureBox1;
+        internal Button ButtonBuscar;
+        internal Label Label2;
+        internal Label Label3;
     }
 }

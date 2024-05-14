@@ -70,6 +70,73 @@ CREATE INDEX IX_Artista ON ARTISTA(id);
 
 -- Crea la vista VW_Top_Artistas
 CREATE VIEW VW_Top_Artistas AS
-SELECT ARTISTA.Id AS "Top Artist", ARTISTA.Nombre, PAIS.Nombre AS Pais
+SELECT ARTISTA.Id AS "Top Artist", ARTISTA.Nombre, PAIS.Nombre AS Pais, ARTISTA.Estatus
 FROM ARTISTA
 JOIN PAIS ON PAIS.Id = ARTISTA.IdPais;
+
+CREATE OR REPLACE FUNCTION SP_VerificarCredenciales(
+    Usuario VARCHAR(50),
+    Contraseña VARCHAR(50)
+) 
+RETURNS TABLE(Id INT, Nombre VARCHAR(50), Username VARCHAR(50)) AS $$
+BEGIN
+    RETURN QUERY 
+    SELECT Id, Nombre, Username 
+    FROM Usuario 
+    WHERE Username = Usuario 
+    AND Password = ENCODE(DIGEST(Contraseña, 'sha1'), 'hex') 
+    AND Estatus = 1;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION SP_ObtenerArtistaPorId(
+    IdArtista INT
+)
+RETURNS TABLE(NombreArtista VARCHAR, Idpais INT) AS $$
+BEGIN
+    RETURN QUERY 
+    SELECT 
+        Nombre AS NombreArtista,
+        IdPais AS Idpais
+    FROM 
+        ARTISTA A
+    WHERE 
+        A.Id = IdArtista;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE PROCEDURE SP_ActualizarArtista(
+    Id INT,
+    Nombre VARCHAR(50),
+    IdPais INT,
+    idUsuarioModifica INT
+)
+AS $$
+BEGIN
+    UPDATE ARTISTA
+    SET 
+        Nombre = Nombre,
+        IdPais = IdPais,
+        IdUsuarioModifica = idUsuarioModifica,
+        FechaModifica = CURRENT_TIMESTAMP
+    WHERE
+        Id = Id;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE PROCEDURE SP_EliminarArtista(
+    Id INT,
+    IdUsuarioModifica INT
+)
+AS $$
+BEGIN
+    UPDATE ARTISTA
+    SET 
+        Estatus = 0,
+        IdUsuarioModifica = IdUsuarioModifica,
+        FechaModifica = CURRENT_TIMESTAMP
+    WHERE
+        Id = Id;
+END;
+$$ LANGUAGE plpgsql;
+

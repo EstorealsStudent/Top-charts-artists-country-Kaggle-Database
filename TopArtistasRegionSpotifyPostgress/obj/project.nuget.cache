@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FJuEqu40oCVSLSx7PAVQPJ6BHcmUWStJHDsY7GVCBANn6onvX9JlTYpCWRTpzdA1D3YHHtlGqyjDSvDhgVCWSg==",
+  "dgSpecHash": "/1XN2AdE4ce10kFcgODQA7xsWbPD+YR5j2RhzJlnq7DTBy32cY4jpgYE1koBj0T/lpNnCAYLbZPBcPPy119PWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionSpotifyPostgress\\TopArtistasRegionSpotify.vbproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\estor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\estor\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\estor\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
-    "C:\\Users\\estor\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\estor\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\estor\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\estor\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\estor\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

@@ -475,9 +475,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionCSharp.csproj",
-      "projectName": "TopArtistasRegionCSharp",
-      "projectPath": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionCSharp.csproj",
+      "projectUniqueName": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionSpotify.csproj",
+      "projectName": "TopArtistasRegionSpotify",
+      "projectPath": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\TopArtistasRegionSpotify.csproj",
       "packagesPath": "C:\\Users\\estor\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\estor\\OneDrive\\Escritorio\\TopartistasRegion\\TopArtistasRegionCSharp\\obj\\",
       "projectStyle": "PackageReference",

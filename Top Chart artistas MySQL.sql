@@ -77,6 +77,65 @@ CREATE INDEX IX_Artista ON ARTISTA(Id);
 
 -- Crear vista VW_Top_Artistas
 CREATE VIEW VW_Top_Artistas AS
-SELECT ARTISTA.Id AS `Top Artist`, ARTISTA.Nombre, PAIS.Nombre AS Pais
+SELECT ARTISTA.Id AS `Top Artist`, ARTISTA.Nombre, PAIS.Nombre AS Pais, ARTISTA.Estatus
 FROM ARTISTA
 JOIN PAIS ON PAIS.Id = ARTISTA.IdPais;
+
+CREATE PROCEDURE SP_VerificarCredenciales (
+    IN Usuario VARCHAR(50),
+    IN Contraseña VARCHAR(50)
+)
+BEGIN
+    SELECT Id, Nombre, Username 
+    FROM Usuario 
+    WHERE Username = Usuario 
+          AND Password = SHA1(Contraseña)
+          AND Estatus = 1;
+END //
+
+CREATE PROCEDURE SP_ObtenerArtistaPorId (
+    IN IdArtista INT
+)
+BEGIN
+    SELECT 
+        Nombre AS NombreArtista,
+        IdPais AS Idpais
+    FROM 
+        ARTISTA A
+    WHERE 
+        A.Id = IdArtista;
+END //
+
+
+CREATE PROCEDURE SP_ActualizarArtista (
+    IN Id INT,
+    IN Nombre NVARCHAR(50),
+    IN IdPais INT,
+    IN idUsuarioModifica INT
+)
+BEGIN
+    UPDATE ARTISTA
+    SET 
+        Nombre = Nombre,
+        IdPais = IdPais,
+        IdUsuarioModifica = idUsuarioModifica,
+        FechaModifica = NOW()
+    WHERE
+        Id = Id;
+END //
+
+
+
+CREATE PROCEDURE SP_EliminarArtista (
+    IN Id INT,
+    IN IdUsuarioModifica INT
+)
+BEGIN
+    UPDATE ARTISTA
+    SET 
+        Estatus = 0,
+        IdUsuarioModifica = IdUsuarioModifica,
+        FechaModifica = NOW()
+    WHERE
+        Id = Id;
+END //
